@@ -1,76 +1,60 @@
-📊 Expense Tracker — React + Context API
+💰 Expense Tracker — React
 
-A clean and modern Expense Tracker Application built with React, Context API, useReducer, LocalStorage, and React-Datepicker.
-It supports full CRUD, filtering, memoized totals, responsive UI, and mobile card-view layout.
+A clean and modern Expense Tracker Application built with React, Context API, useReducer, React-Datepicker, and LocalStorage.
+It includes full CRUD operations, dynamic filtering, optimized totals, responsive design, and a mobile-friendly card layout.
 
-<br/>
-⭐ Features
-🧾 Transaction Management
+📦 What’s Inside
 
-Add new transactions
+Add, Edit & Delete transactions (CRUD)
 
-Edit transactions
+Income / Expense tracking
 
-Delete transactions
+Category filtering
 
-Income / Expense types
+Date-range filtering using React-Datepicker
 
-Auto decimal formatting (200 → 200.00)
+Automatic currency formatting (e.g., 200 → 200.00)
 
-Multiline descriptions preserved
+Memoized totals using useMemo
 
-Auto-generated IDs
+Fully responsive UI
 
-Fully controlled forms
+Mobile card-view layout for transactions
 
-LocalStorage persistence
+Persistent storage using localStorage
 
-🔍 Smart Filters
+Beautiful custom modal built using <dialog> + portals
 
-Filter transactions by:
+Clean code architecture with separate contexts
 
-Type (Income / Expense / All)
-
-Category
-
-Date Range (with React DatePicker)
-
-All filters work together and update results instantly.
-
-📈 Dynamic Totals
-
-Total Income
-
-Total Expenses
-
-Current Balance
-
-Auto-calculated using useMemo for performance
-
-🎨 UI / UX Highlights
-
-Modern dark theme
-
-Custom modal using <dialog> + createPortal()
-
-Mobile-responsive layout
-
-Transactions table converts to card-style layout on small screens
-
-Smooth spacing, shadows, and rounded UI elements
-
-<br/>
 🛠️ Tech Stack
-Layer	Technology
-Frontend	React (Hooks, Context API, useReducer)
-UI	Tailwind utilities + Custom CSS
-Date Picker	react-datepicker
-State Persistence	LocalStorage
+Area	Tools Used
+Frontend	React (Hooks, Components)
+State Mgmt	Context API + useReducer
+UI / Styling	Custom CSS + Tailwind utilities
+Date Picker	React-Datepicker
+Persistence	LocalStorage
+Optimization	useMemo, Pure utility functions
 Build Tool	Vite
-<br/>
-📂 Project Structure
+
+Lightweight, dependency-minimal, and structured like a real-world React application.
+
+📷 Screenshots
+
+(Add your screenshots here)
+Example:
+
+<img width="1400" alt="Expense Tracker Screenshot" src="./screenshots/home.png" />
+<img width="500" alt="Mobile Screenshot" src="./screenshots/mobile.png" />
+
+🚀 Running the Project Locally
+git clone https://github.com/YOUR_USERNAME/expense-tracker-react.git
+cd expense-tracker-react
+npm install
+npm run dev
+
+📌 Folder Structure
 src/
-│
 ├── components/
 │   ├── AddEditTransaction.jsx
 │   ├── Actions.jsx
@@ -97,52 +81,29 @@ src/
 ├── main.jsx
 └── index.css
 
-<br/>
-🖥️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/YOUR_USERNAME/expense-tracker-react.git
-cd expense-tracker-react
+⚡ Future Enhancements
 
-2️⃣ Install dependencies
-npm install
+Dashboard charts (Recharts)
 
-3️⃣ Run the development server
-npm run dev
-
-4️⃣ Build for production
-npm run build
-
-<br/>
-📸 Screenshots
-
-(Add your screenshots here — GitHub will render them full-width with spacing.)
-
-Example:
-
-![App Screenshot](./screenshots/home.png)
-![Mobile Screenshot](./screenshots/mobile.png)
-
-<br/>
-🚀 Future Enhancements (Optional)
-
-Graphs / charts (Recharts)
+CSV export
 
 Pagination
 
-Export transactions to CSV
+Category management features
 
-Backend integration (Node + MongoDB)
+Authentication + backend (Node + MongoDB)
 
-User accounts & authentication
-
-Category management system
-
-<br/>
-📜 License
-
-
-<br/>
 👨‍💻 Author
 
 Ashwani Kumar
 MERN Stack Developer
+(Add LinkedIn / Portfolio here)
+
+If you want, I can also:
+
+✔ Create a header/banner graphic for the README
+✔ Help format your screenshots visually
+✔ Prepare a GitHub description + tags
+✔ Write a resume-friendly project summary
+
+Just tell me “make a banner” or “write resume summary”.
