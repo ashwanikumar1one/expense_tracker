@@ -5,6 +5,8 @@ A clean, modern expense tracker built with React, Context API, useReducer, custo
 This project showcases real-world frontend architecture and state-management patterns suitable for junior → mid-level React developers.
 
 
+
+
 📸 Screenshots
 <img width="1151" height="802" alt="Screenshot 2025-11-15 at 11 54 41 PM" src="https://github.com/user-attachments/assets/1a4d0d59-81eb-4805-9fd3-912c88634c72" />
 
@@ -13,6 +15,8 @@ This project showcases real-world frontend architecture and state-management pat
 <img width="1440" height="812" alt="Screenshot 2025-11-16 at 9 16 30 AM" src="https://github.com/user-attachments/assets/db43fa32-941e-4234-a23a-336315525527" />
 
 <img width="1433" height="810" alt="Screenshot 2025-11-16 at 9 19 12 AM" src="https://github.com/user-attachments/assets/2abe95c7-97e1-41d6-a025-4cd656d56d70" />
+
+
 
 
 ✨ Features
@@ -25,6 +29,8 @@ This project showcases real-world frontend architecture and state-management pat
  🟢 Responsive modals for Add / Edit / Details / Delete
 
 
+
+
 🧠 Smart Filtering
 
 Filter by:
@@ -34,18 +40,26 @@ Filter by:
 ✔ Real-time computed totals using useMemo
 ✔ Total Income, Total Expense, Balance
 
+
+
 🗄 Persistent Storage:
 ✔ All data saved to localStorage
 ✔ Restores automatically on reload
+
+
 
 📱 Fully Responsive
 ✔ Mobile-friendly layout
 ✔ Transactions table transforms into card view on small screens
 
+
+
 🎨 UI/UX
 ✔ Custom modal using <dialog> + createPortal()
 ✔ Smooth focus & input styling
 ✔ Clean animations
+
+
 
 🛠️ Tech Stack
  🔵 Layer	Tech
@@ -58,46 +72,17 @@ Filter by:
 
 
 
- 
-📁 Project Structure
-src/
-│
-├── components/
-│   ├── Header.jsx
-│   ├── Balance.jsx
-│   ├── Filters.jsx
-│   ├── Transactions.jsx
-│   ├── TransactionItem.jsx
-│   ├── AddEditTransaction.jsx
-│   ├── Actions.jsx
-│   └── TransactionDetails.jsx
-│   └── DateRangePicker.jsx
-│
-├── contexts/
-│   ├── UiContext.jsx
-│   └── TransactionContext.jsx
-│
-├── UI/
-│   ├── Modal.jsx
-│   └── Input.jsx
-│
-├── util/
-│   ├── formatter.js
-│   └── transactionFilter.js
-│   └── categories.js
-│
-├── App.jsx
-├── main.jsx
-└── index.css
-
 
 🚀 Run Locally
 npm install
 npm run dev
 
 
+
 📦 Build
 npm run build
+
+
 
 
 🧩 Future Enhancements (Optional for Portfolio)
@@ -106,6 +91,8 @@ User accounts with backend (Node / Express / MongoDB)
 Export CSV
 Pagination
 Light/Dark toggle
+
+
 
 
 🙋‍♂️ Author
