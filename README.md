@@ -109,6 +109,8 @@ Follow these steps to get a local copy up and running:
 <img width="1151" height="802" alt="Screenshot 2025-11-15 at 11 54 41 PM" src="https://github.com/user-attachments/assets/10b322eb-fcc9-496d-9a9f-12c2dc30f277" /><img width="1043" height="750" alt="Screenshot 2025-11-15 at 11 55 52 PM" src="https://github.com/user-attachments/assets/e442f55d-bfa4-4fc8-9957-aa6efe1f89ed" />
 <img width="1440" height="812" alt="Screenshot 2025-11-16 at 9 16 30 AM" src="https://github.com/user-attachments/assets/3e0ba02d-dcc2-4831-8a21-bfd477a2696b" />
 <img width="1433" height="810" alt="Screenshot 2025-11-16 at 9 19 12 AM" src="https://github.com/user-attachments/assets/c3e8d70a-66f9-45fc-8fc6-f73bbe13bd1f" />
+<img width="1428" height="800" alt="Screenshot 2025-11-16 at 10 42 07 AM" src="https://github.com/user-attachments/assets/e0c8a5d4-c8cb-4b8a-bf4c-d934bd8e7f36" />
+
 
 
 
