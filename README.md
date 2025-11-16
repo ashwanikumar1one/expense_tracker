@@ -1,60 +1,54 @@
 💰 Expense Tracker — React
 
-A clean and modern Expense Tracker Application built with React, Context API, useReducer, React-Datepicker, and LocalStorage.
-It includes full CRUD operations, dynamic filtering, optimized totals, responsive design, and a mobile-friendly card layout.
+A clean and modern Expense Tracker Application built with React, Context API, useReducer, LocalStorage, and React-Datepicker.
+It supports full CRUD operations, filtering, memoized totals, responsive design, and a mobile-friendly card layout.
 
 📦 What’s Inside
 
-Add, Edit & Delete transactions (CRUD)
+🧾 Add, Edit & Delete transactions
 
-Income / Expense tracking
+💰 Income / Expense tracking
 
-Category filtering
+🏷️ Category filter
 
-Date-range filtering using React-Datepicker
+📅 Date-range filter (React Datepicker)
 
-Automatic currency formatting (e.g., 200 → 200.00)
+🔄 Automatically formatted amounts (200 → 200.00)
 
-Memoized totals using useMemo
+⚡ Memoized totals using useMemo
 
-Fully responsive UI
+📱 Fully responsive UI
 
-Mobile card-view layout for transactions
+🗂 Mobile card-view layout for transactions
 
-Persistent storage using localStorage
+💾 Persistent data using LocalStorage
 
-Beautiful custom modal built using <dialog> + portals
-
-Clean code architecture with separate contexts
+🪟 Custom modal using <dialog> + React Portal
 
 🛠️ Tech Stack
 Area	Tools Used
 Frontend	React (Hooks, Components)
 State Mgmt	Context API + useReducer
-UI / Styling	Custom CSS + Tailwind utilities
-Date Picker	React-Datepicker
-Persistence	LocalStorage
-Optimization	useMemo, Pure utility functions
-Build Tool	Vite
-
-Lightweight, dependency-minimal, and structured like a real-world React application.
-
+Styling	Tailwind utilities + Custom CSS
+DatePicker	React-Datepicker
+Storage	LocalStorage
+Bundler	Vite
 📷 Screenshots
 
-(Add your screenshots here)
+(Add your screenshots here — GitHub will render them with spacing)
+
 Example:
 
-<img width="1400" alt="Expense Tracker Screenshot" src="./screenshots/home.png" />
-<img width="500" alt="Mobile Screenshot" src="./screenshots/mobile.png" />
-
+<img width="900" alt="Expense Tracker Screenshot" src="./screenshots/home.png">
 🚀 Running the Project Locally
 git clone https://github.com/YOUR_USERNAME/expense-tracker-react.git
 cd expense-tracker-react
 npm install
 npm run dev
 
-📌 Folder Structure
+📁 Folder Structure
 src/
+│
 ├── components/
 │   ├── AddEditTransaction.jsx
 │   ├── Actions.jsx
@@ -81,29 +75,20 @@ src/
 ├── main.jsx
 └── index.css
 
-⚡ Future Enhancements
+🎯 Future Enhancements
 
-Dashboard charts (Recharts)
+📊 Charts & visual insights (Recharts)
 
-CSV export
+📁 Export to CSV
 
-Pagination
+🔐 Login system + backend (Node + MongoDB)
 
-Category management features
+🏷️ Category management (CRUD)
 
-Authentication + backend (Node + MongoDB)
+📱 Better mobile gestures & UX
 
 👨‍💻 Author
 
 Ashwani Kumar
 MERN Stack Developer
-(Add LinkedIn / Portfolio here)
-
-If you want, I can also:
-
-✔ Create a header/banner graphic for the README
-✔ Help format your screenshots visually
-✔ Prepare a GitHub description + tags
-✔ Write a resume-friendly project summary
-
-Just tell me “make a banner” or “write resume summary”.
+(Add LinkedIn / Portfolio)
