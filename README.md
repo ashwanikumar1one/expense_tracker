@@ -22,11 +22,11 @@ This project showcases real-world frontend architecture and state-management pat
 ✨ Features
 🧾 Transaction Management
 
- 🟢 Add, edit, delete transactions
- 🟢 Income & expense categorization
- 🟢 Auto-formatted currency & dates
- 🟢 Multi-line description preserved (using white-space: pre-line)
- 🟢 Responsive modals for Add / Edit / Details / Delete
+ 🟢 Add, edit, delete transactions.
+ 🟢 Income & expense categorization.
+ 🟢 Auto-formatted currency & dates.
+ 🟢 Multi-line description preserved (using white-space: pre-line).
+ 🟢 Responsive modals for Add / Edit / Details / Delete.
 
 
 
