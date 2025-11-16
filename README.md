@@ -1,151 +1,148 @@
-📊 Expense Tracker (React + Context API)
+📊 Expense Tracker — React + Context API
 
-A modern, responsive Expense Tracker built with React, Context API, useReducer, and LocalStorage.
-This project demonstrates real-world front-end application architecture: global state management, optimized rendering with useMemo, reusable components, CRUD operations, dynamic filtering, and mobile-responsive UI.
+A clean and modern Expense Tracker Application built with React, Context API, useReducer, LocalStorage, and React-Datepicker.
+It supports full CRUD, filtering, memoized totals, responsive UI, and mobile card-view layout.
 
-🚀 Live Demo
-
-(Add your Netlify or Vercel link here once deployed)
-
-📸 Screenshots
-
-<img width="1151" height="802" alt="Screenshot 2025-11-15 at 11 54 41 PM" src="https://github.com/user-attachments/assets/0b24ec2e-6b05-44b5-b480-b2b3e9ca1fd2" />
-<img width="1043" height="750" alt="Screenshot 2025-11-15 at 11 55 52 PM" src="https://github.com/user-attachments/assets/6784c6ab-caf5-4935-9723-328a3471fa88" />
-<img width="1440" height="812" alt="Screenshot 2025-11-16 at 9 16 30 AM" src="https://github.com/user-attachments/assets/206a805e-1db5-4fc7-8c42-74ebf53a082b" />
-<img width="1433" height="810" alt="Screenshot 2025-11-16 at 9 19 12 AM" src="https://github.com/user-attachments/assets/8c66b490-4058-4218-b577-11e995b8be0b" />
-
-
-
-
-
-✨ Features
+<br/>
+⭐ Features
 🧾 Transaction Management
 
-✅Add new transactions
+Add new transactions
 
-✅Edit existing transactions
+Edit transactions
 
-✅Delete transactions
+Delete transactions
 
-✅Income & expense support
+Income / Expense types
 
-✅Decimal formatting (e.g., 200 → 200.00)
+Auto decimal formatting (200 → 200.00)
 
-✅Multi-line descriptions preserved (white-space: pre-line)
+Multiline descriptions preserved
 
-✅Auto-generated IDs
+Auto-generated IDs
 
-✅Data saved to localStorage
+Fully controlled forms
 
-
-
-
-
+LocalStorage persistence
 
 🔍 Smart Filters
 
-✅Filter transactions by:
+Filter transactions by:
 
-✅Type (Income, Expense, All)
+Type (Income / Expense / All)
 
-✅Category
+Category
 
-✅Date Range (React DatePicker)
+Date Range (with React DatePicker)
 
-✅All filters work together seamlessly.
+All filters work together and update results instantly.
 
+📈 Dynamic Totals
 
+Total Income
 
+Total Expenses
 
+Current Balance
 
+Auto-calculated using useMemo for performance
 
-🧠 Optimized State & Computations
+🎨 UI / UX Highlights
 
-✅Global state handled using Context API + useReducer
+Modern dark theme
 
-✅Expensive calculations memoized using useMemo
+Custom modal using <dialog> + createPortal()
 
-✅Total Income, Total Expense & Balance automatically recompute when filters change
+Mobile-responsive layout
 
-✅Local state used for controlled forms
+Transactions table converts to card-style layout on small screens
 
+Smooth spacing, shadows, and rounded UI elements
 
-
-
-
-
-🎨 User Interface
-
-✅Modern dark UI
-
-✅Styled using custom CSS + Tailwind utilities
-
-✅Reusable modal using <dialog> + createPortal()
-
-✅Transaction table converts to card view on mobile
-
-✅Smooth responsive layout across all breakpoints
-
-
-
-
-
+<br/>
 🛠️ Tech Stack
+Layer	Technology
+Frontend	React (Hooks, Context API, useReducer)
+UI	Tailwind utilities + Custom CSS
+Date Picker	react-datepicker
+State Persistence	LocalStorage
+Build Tool	Vite
+<br/>
+📂 Project Structure
+src/
+│
+├── components/
+│   ├── AddEditTransaction.jsx
+│   ├── Actions.jsx
+│   ├── Balance.jsx
+│   ├── Filters.jsx
+│   ├── Header.jsx
+│   ├── TransactionDetails.jsx
+│   ├── TransactionItem.jsx
+│   └── Transactions.jsx
+│
+├── contexts/
+│   ├── UiContext.jsx
+│   └── TransactionContext.jsx
+│
+├── UI/
+│   ├── Modal.jsx
+│   └── Input.jsx
+│
+├── util/
+│   ├── formatter.js
+│   └── transactionFilter.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
 
-✅ Frontend:
-
-✅ React (Hooks)
-
-✅ Context API & useReducer
-
-✅ React DatePicker
-
-✅ Tailwind (base) + Custom CSS
-
-✅ LocalStorage persistence
-
-✅ Vite (build tool)
-
-
-
-
-
-🚀 Run Locally
-git clone https://github.com/your-username/expense-tracker-react.git
+<br/>
+🖥️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/YOUR_USERNAME/expense-tracker-react.git
 cd expense-tracker-react
 
+2️⃣ Install dependencies
 npm install
 
+3️⃣ Run the development server
 npm run dev
 
+4️⃣ Build for production
+npm run build
+
+<br/>
+📸 Screenshots
+
+(Add your screenshots here — GitHub will render them full-width with spacing.)
+
+Example:
+
+![App Screenshot](./screenshots/home.png)
+![Mobile Screenshot](./screenshots/mobile.png)
+
+<br/>
+🚀 Future Enhancements (Optional)
+
+Graphs / charts (Recharts)
+
+Pagination
+
+Export transactions to CSV
+
+Backend integration (Node + MongoDB)
+
+User accounts & authentication
+
+Category management system
+
+<br/>
+📜 License
 
 
-
-
-
-🔮 Future Enhancements (Optional)
-
-✅ These are not implemented, but great if you want to expand the project:
-
-✅ Graphs & Charts (Recharts)
-
-✅ Authentication (with Node/Mongo backend)
-
-✅ Export to CSV
-
-✅ Pagination for large datasets
-
-✅ Light/Dark theme toggle
-
-✅ Category management CRUD
-
-
-
-
-
-
-🙋‍♂️ Author
+<br/>
+👨‍💻 Author
 
 Ashwani Kumar
-MERN Developer
-LinkedIn — [Ashwani Kumar](https://www.linkedin.com/in/ashwani-kumar-a26301284/)
+MERN Stack Developer
