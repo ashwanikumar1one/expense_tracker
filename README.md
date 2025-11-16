@@ -1,96 +1,151 @@
-🚀 Expense Tracker — React + Context API + LocalStorage
+📊 Expense Tracker (React + Context API)
 
-A clean, modern expense tracker built with React, Context API, useReducer, custom hooks, useMemo optimization, dynamic filtering, date-range picker, and localStorage persistence.
+A modern, responsive Expense Tracker built with React, Context API, useReducer, and LocalStorage.
+This project demonstrates real-world front-end application architecture: global state management, optimized rendering with useMemo, reusable components, CRUD operations, dynamic filtering, and mobile-responsive UI.
 
-This project showcases real-world frontend architecture and state-management patterns suitable for junior → mid-level React developers.
+🚀 Live Demo
 
-
-
+(Add your Netlify or Vercel link here once deployed)
 
 📸 Screenshots
-<img width="1151" height="802" alt="Screenshot 2025-11-15 at 11 54 41 PM" src="https://github.com/user-attachments/assets/1a4d0d59-81eb-4805-9fd3-912c88634c72" />
 
-<img width="1043" height="750" alt="Screenshot 2025-11-15 at 11 55 52 PM" src="https://github.com/user-attachments/assets/27bc4eec-ac1f-4f93-a92e-376ae5e8e2fd" />
-
-<img width="1440" height="812" alt="Screenshot 2025-11-16 at 9 16 30 AM" src="https://github.com/user-attachments/assets/db43fa32-941e-4234-a23a-336315525527" />
-
-<img width="1433" height="810" alt="Screenshot 2025-11-16 at 9 19 12 AM" src="https://github.com/user-attachments/assets/2abe95c7-97e1-41d6-a025-4cd656d56d70" />
-
-
+<img width="1151" height="802" alt="Screenshot 2025-11-15 at 11 54 41 PM" src="https://github.com/user-attachments/assets/0b24ec2e-6b05-44b5-b480-b2b3e9ca1fd2" />
+<img width="1043" height="750" alt="Screenshot 2025-11-15 at 11 55 52 PM" src="https://github.com/user-attachments/assets/6784c6ab-caf5-4935-9723-328a3471fa88" />
+<img width="1440" height="812" alt="Screenshot 2025-11-16 at 9 16 30 AM" src="https://github.com/user-attachments/assets/206a805e-1db5-4fc7-8c42-74ebf53a082b" />
+<img width="1433" height="810" alt="Screenshot 2025-11-16 at 9 19 12 AM" src="https://github.com/user-attachments/assets/8c66b490-4058-4218-b577-11e995b8be0b" />
 
 
 ✨ Features
 🧾 Transaction Management
 
- 🟢 Add, edit, delete transactions.
- 🟢 Income & expense categorization.
- 🟢 Auto-formatted currency & dates.
- 🟢 Multi-line description preserved (using white-space: pre-line).
- 🟢 Responsive modals for Add / Edit / Details / Delete.
+Add new transactions
 
+Edit existing transactions
 
+Delete transactions
 
+Income & expense support
 
-🧠 Smart Filtering
+Decimal formatting (e.g., 200 → 200.00)
 
-Filter by:
-✔ Type (Income / Expense / All)
-✔ Category
-✔ Date Range (React DatePicker)
-✔ Real-time computed totals using useMemo
-✔ Total Income, Total Expense, Balance
+Multi-line descriptions preserved (white-space: pre-line)
 
+Auto-generated IDs
 
+Data saved to localStorage
 
-🗄 Persistent Storage:
-✔ All data saved to localStorage
-✔ Restores automatically on reload
+🔍 Smart Filters
 
+Filter transactions by:
 
+Type (Income, Expense, All)
 
-📱 Fully Responsive
-✔ Mobile-friendly layout
-✔ Transactions table transforms into card view on small screens
+Category
 
+Date Range (React DatePicker)
 
+All filters work together seamlessly.
 
-🎨 UI/UX
-✔ Custom modal using <dialog> + createPortal()
-✔ Smooth focus & input styling
-✔ Clean animations
+🧠 Optimized State & Computations
 
+Global state handled using Context API + useReducer
 
+Expensive calculations memoized using useMemo
+
+Total Income, Total Expense & Balance automatically recompute when filters change
+
+Local state used for controlled forms
+
+🎨 User Interface
+
+Modern dark UI
+
+Styled using custom CSS + Tailwind utilities
+
+Reusable modal using <dialog> + createPortal()
+
+Transaction table converts to card view on mobile
+
+Smooth responsive layout across all breakpoints
 
 🛠️ Tech Stack
- 🔵 Layer	Tech
- 🔵 Frontend	React + Vite
- 🔵 State	Context API + useReducer
- 🔵 Storage	LocalStorage
- 🔵 UI	Tailwind + Custom CSS
- 🔵 Utilities	useMemo, useEffect, date formatting, currency formatting
- 🔵 Components	Modular & reusable
 
+Frontend:
 
+React (Hooks)
 
+Context API & useReducer
 
-🚀 Run Locally
+React DatePicker
+
+Tailwind (base) + Custom CSS
+
+LocalStorage persistence
+
+Vite (build tool)
+
+📁 Folder Structure
+src/
+│
+├── components/
+│   ├── Header.jsx
+│   ├── Balance.jsx
+│   ├── Filters.jsx
+│   ├── Transactions.jsx
+│   ├── TransactionItem.jsx
+│   ├── AddEditTransaction.jsx
+│   ├── Actions.jsx
+│   └── TransactionDetails.jsx
+│
+├── contexts/
+│   ├── UiContext.jsx
+│   └── TransactionContext.jsx
+│
+├── UI/
+│   ├── Modal.jsx
+│   └── Input.jsx
+│
+├── util/
+│   ├── transactionFilter.js
+│   └── formatter.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+⚙️ Installation & Setup
+1️⃣ Clone the repo
+git clone https://github.com/your-username/expense-tracker-react.git
+cd expense-tracker-react
+
+2️⃣ Install dependencies
 npm install
+
+3️⃣ Start development server
 npm run dev
 
-
-
-📦 Build
+4️⃣ Build for production
 npm run build
 
+🔮 Future Enhancements (Optional)
 
+These are not implemented, but great if you want to expand the project:
 
+Graphs & Charts (Recharts)
 
-🧩 Future Enhancements (Optional for Portfolio)
-Dashboard graphs (Recharts)
-User accounts with backend (Node / Express / MongoDB)
-Export CSV
-Pagination
-Light/Dark toggle
+Authentication (with Node/Mongo backend)
+
+Export to CSV
+
+Pagination for large datasets
+
+Light/Dark theme toggle
+
+Category management CRUD
+
+📜 License
+
+MIT License — feel free to use this project for learning or personal use.
 
 
 
