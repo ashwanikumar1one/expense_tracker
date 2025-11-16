@@ -1,94 +1,134 @@
-💰 Expense Tracker — React
+# 📊 Expense Tracker — React + Context API
 
-A clean and modern Expense Tracker Application built with React, Context API, useReducer, LocalStorage, and React-Datepicker.
-It supports full CRUD operations, filtering, memoized totals, responsive design, and a mobile-friendly card layout.
+A **clean and modern Expense Tracker Application** built with **React**, **Context API**, `useReducer`, `LocalStorage`, and `react-datepicker`.
 
-📦 What’s Inside
+It supports full **CRUD** (Create, Read, Update, Delete), powerful **filtering**, memoized totals, a **responsive UI**, and a mobile card-view layout for transactions.
 
-🧾 Add, Edit & Delete transactions
+---
 
-💰 Income / Expense tracking
+## ⭐ Key Features
 
-🏷️ Category filter
+### 🧾 Transaction Management
+* **Full CRUD:** Add, edit, and delete transactions instantly.
+* **Types:** Supports both **Income** and **Expense** transaction types.
+* **Formatting:** Auto decimal formatting (e.g., `200` becomes `200.00`).
+* **Persistence:** Transactions are saved locally using **LocalStorage**.
+* **Details:** Multiline descriptions are preserved.
 
-📅 Date-range filter (React Datepicker)
+### 🔍 Smart Filters
+Filter transactions seamlessly by:
+* **Type** (Income / Expense / All)
+* **Category**
+* **Date Range Picker** (powered by `react-datepicker`)
 
-🔄 Automatically formatted amounts (200 → 200.00)
+All filters work together and update the results instantly.
 
-⚡ Memoized totals using useMemo
+### 📈 Dynamic Totals
+Performance-optimized totals auto-calculated using `useMemo`:
+* **Total Income**
+* **Total Expenses**
+* **Current Balance**
 
-📱 Fully responsive UI
+### 🎨 UI / UX Highlights
+* Modern **Dark Theme** for a sleek look.
+* **Custom Modal:** Built using the native `<dialog>` element and `createPortal()` for better accessibility and control.
+* **Mobile-Responsive Layout:**
+    * The transactions table converts to a **card-style layout** on small screens.
+    * Features smooth spacing, shadows, and rounded UI elements.
 
-🗂 Mobile card-view layout for transactions
+---
 
-💾 Persistent data using LocalStorage
+## 🛠️ Tech Stack
 
-🪟 Custom modal using <dialog> + React Portal
+| Layer | Technology | Description |
+| :--- | :--- | :--- |
+| **Frontend** | React (Hooks, Context API, `useReducer`) | Core application library. |
+| **UI Styling** | Tailwind Utilities + Custom CSS | Fast, utility-first styling. |
+| **Date Picker** | `react-datepicker` | Intuitive date range selection. |
+| **State Persistence** | LocalStorage | Simple, client-side data storage. |
+| **Build Tool** | Vite | Next-generation frontend tooling. |
 
-🛠️ Tech Stack
-Area	Tools Used
-Frontend	React (Hooks, Components)
-State Mgmt	Context API + useReducer
-Styling	Tailwind utilities + Custom CSS
-DatePicker	React-Datepicker
-Storage	LocalStorage
-Bundler	Vite
-📷 Screenshots
+---
 
-(Add your screenshots here — GitHub will render them with spacing)
+## 📂 Project Structure
 
-Example:
-
-<img width="900" alt="Expense Tracker Screenshot" src="./screenshots/home.png">
-🚀 Running the Project Locally
-git clone https://github.com/YOUR_USERNAME/expense-tracker-react.git
-cd expense-tracker-react
-npm install
-npm run dev
-
-📁 Folder Structure
+```bash
 src/
 │
-├── components/
-│   ├── AddEditTransaction.jsx
-│   ├── Actions.jsx
-│   ├── Balance.jsx
-│   ├── Filters.jsx
-│   ├── Header.jsx
-│   ├── TransactionDetails.jsx
-│   ├── TransactionItem.jsx
-│   └── Transactions.jsx
+├── components/           # Reusable UI parts (Balance, Header, etc.)
+│   ├── AddEditTransaction.jsx
+│   ├── ...
 │
-├── contexts/
-│   ├── UiContext.jsx
-│   └── TransactionContext.jsx
+├── contexts/             # Global state management
+│   ├── UiContext.jsx
+│   └── TransactionContext.jsx
 │
-├── UI/
-│   ├── Modal.jsx
-│   └── Input.jsx
+├── UI/                   # Common, low-level UI elements (Modal, Input)
+│   ├── Modal.jsx
+│   └── Input.jsx
 │
-├── util/
-│   ├── formatter.js
-│   └── transactionFilter.js
+├── util/                 # Helper functions for formatting and filtering
+│   ├── formatter.js
+│   └── transactionFilter.js
 │
-├── App.jsx
-├── main.jsx
-└── index.css
+├── App.jsx               # Main application component
+├── main.jsx              # Entry point
+└── index.css             # Global styles
+````
 
-🎯 Future Enhancements
+-----
 
-📊 Charts & visual insights (Recharts)
+## 🖥️ Run Locally
 
-📁 Export to CSV
+Follow these steps to get a local copy up and running:
 
-🔐 Login system + backend (Node + MongoDB)
+1.  ### **Clone the repository**
 
-🏷️ Category management (CRUD)
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/expense-tracker-react.git](https://github.com/YOUR_USERNAME/expense-tracker-react.git)
+    cd expense-tracker-react
+    ```
 
-📱 Better mobile gestures & UX
+2.  ### **Install dependencies**
 
-👨‍💻 Author
+    ```bash
+    npm install
+    ```
 
-Ashwani Kumar
+3.  ### **Run the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+
+-----
+
+## 📸 Screenshots
+
+<img width="1151" height="802" alt="Screenshot 2025-11-15 at 11 54 41 PM" src="https://github.com/user-attachments/assets/10b322eb-fcc9-496d-9a9f-12c2dc30f277" /><img width="1043" height="750" alt="Screenshot 2025-11-15 at 11 55 52 PM" src="https://github.com/user-attachments/assets/e442f55d-bfa4-4fc8-9957-aa6efe1f89ed" />
+<img width="1440" height="812" alt="Screenshot 2025-11-16 at 9 16 30 AM" src="https://github.com/user-attachments/assets/3e0ba02d-dcc2-4831-8a21-bfd477a2696b" />
+<img width="1433" height="810" alt="Screenshot 2025-11-16 at 9 19 12 AM" src="https://github.com/user-attachments/assets/c3e8d70a-66f9-45fc-8fc6-f73bbe13bd1f" />
+
+
+
+-----
+
+## 🚀 Future Enhancements (Optional)
+
+  * Data visualization using **Graphs / charts** (e.g., Recharts).
+  * Add **Pagination** for a better experience with many transactions.
+  * Feature to **Export transactions to CSV**.
+  * **Backend integration** (Node + MongoDB) for cloud persistence.
+  * **User accounts & authentication**.
+  * Comprehensive **Category management system**.
+
+
+-----
+
+## 👨‍💻 Author
+
+**Ashwani Kumar**
 MERN Stack Developer
-(Add LinkedIn / Portfolio)
+
+[🔗 Ashwani Kumar](https://www.linkedin.com/in/ashwani-kumar-a26301284/)
