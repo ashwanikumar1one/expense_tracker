@@ -15,137 +15,131 @@ This project demonstrates real-world front-end application architecture: global 
 <img width="1433" height="810" alt="Screenshot 2025-11-16 at 9 19 12 AM" src="https://github.com/user-attachments/assets/8c66b490-4058-4218-b577-11e995b8be0b" />
 
 
+
+
+
 ✨ Features
 🧾 Transaction Management
 
-Add new transactions
+✅Add new transactions
 
-Edit existing transactions
+✅Edit existing transactions
 
-Delete transactions
+✅Delete transactions
 
-Income & expense support
+✅Income & expense support
 
-Decimal formatting (e.g., 200 → 200.00)
+✅Decimal formatting (e.g., 200 → 200.00)
 
-Multi-line descriptions preserved (white-space: pre-line)
+✅Multi-line descriptions preserved (white-space: pre-line)
 
-Auto-generated IDs
+✅Auto-generated IDs
 
-Data saved to localStorage
+✅Data saved to localStorage
+
+
+
+
+
 
 🔍 Smart Filters
 
-Filter transactions by:
+✅Filter transactions by:
 
-Type (Income, Expense, All)
+✅Type (Income, Expense, All)
 
-Category
+✅Category
 
-Date Range (React DatePicker)
+✅Date Range (React DatePicker)
 
-All filters work together seamlessly.
+✅All filters work together seamlessly.
+
+
+
+
+
 
 🧠 Optimized State & Computations
 
-Global state handled using Context API + useReducer
+✅Global state handled using Context API + useReducer
 
-Expensive calculations memoized using useMemo
+✅Expensive calculations memoized using useMemo
 
-Total Income, Total Expense & Balance automatically recompute when filters change
+✅Total Income, Total Expense & Balance automatically recompute when filters change
 
-Local state used for controlled forms
+✅Local state used for controlled forms
+
+
+
+
+
 
 🎨 User Interface
 
-Modern dark UI
+✅Modern dark UI
 
-Styled using custom CSS + Tailwind utilities
+✅Styled using custom CSS + Tailwind utilities
 
-Reusable modal using <dialog> + createPortal()
+✅Reusable modal using <dialog> + createPortal()
 
-Transaction table converts to card view on mobile
+✅Transaction table converts to card view on mobile
 
-Smooth responsive layout across all breakpoints
+✅Smooth responsive layout across all breakpoints
+
+
+
+
 
 🛠️ Tech Stack
 
-Frontend:
+✅ Frontend:
 
-React (Hooks)
+✅ React (Hooks)
 
-Context API & useReducer
+✅ Context API & useReducer
 
-React DatePicker
+✅ React DatePicker
 
-Tailwind (base) + Custom CSS
+✅ Tailwind (base) + Custom CSS
 
-LocalStorage persistence
+✅ LocalStorage persistence
 
-Vite (build tool)
+✅ Vite (build tool)
 
-📁 Folder Structure
-src/
-│
-├── components/
-│   ├── Header.jsx
-│   ├── Balance.jsx
-│   ├── Filters.jsx
-│   ├── Transactions.jsx
-│   ├── TransactionItem.jsx
-│   ├── AddEditTransaction.jsx
-│   ├── Actions.jsx
-│   └── TransactionDetails.jsx
-│
-├── contexts/
-│   ├── UiContext.jsx
-│   └── TransactionContext.jsx
-│
-├── UI/
-│   ├── Modal.jsx
-│   └── Input.jsx
-│
-├── util/
-│   ├── transactionFilter.js
-│   └── formatter.js
-│
-├── App.jsx
-├── main.jsx
-└── index.css
 
-⚙️ Installation & Setup
-1️⃣ Clone the repo
+
+
+
+🚀 Run Locally
 git clone https://github.com/your-username/expense-tracker-react.git
 cd expense-tracker-react
 
-2️⃣ Install dependencies
 npm install
 
-3️⃣ Start development server
 npm run dev
 
-4️⃣ Build for production
-npm run build
+
+
+
+
 
 🔮 Future Enhancements (Optional)
 
-These are not implemented, but great if you want to expand the project:
+✅ These are not implemented, but great if you want to expand the project:
 
-Graphs & Charts (Recharts)
+✅ Graphs & Charts (Recharts)
 
-Authentication (with Node/Mongo backend)
+✅ Authentication (with Node/Mongo backend)
 
-Export to CSV
+✅ Export to CSV
 
-Pagination for large datasets
+✅ Pagination for large datasets
 
-Light/Dark theme toggle
+✅ Light/Dark theme toggle
 
-Category management CRUD
+✅ Category management CRUD
 
-📜 License
 
-MIT License — feel free to use this project for learning or personal use.
 
 
 
